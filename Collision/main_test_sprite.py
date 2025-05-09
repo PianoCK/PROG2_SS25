@@ -48,7 +48,7 @@ class Game:
         # initialize game window, etc
         pg.init()
         pg.mixer.init()
-        self.screen = pg.display.set_mode((WIDTH, HEIGHT))
+        self.screen = pg.display.set_mode((WIDTH, HEIGHT), pg.SCALED)
         pg.display.set_caption(TITLE)
         self.game_folder = path.dirname(__file__)
         self.clock = pg.time.Clock()
